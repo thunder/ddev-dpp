@@ -1,0 +1,6 @@
+#!/bin/sh
+#ddev-generated
+
+mkdir -p "${DDEV_APPROOT}/tests/Playwright"
+cd "${DDEV_APPROOT}/tests/Playwright" || exit
+npm init playwright@latest

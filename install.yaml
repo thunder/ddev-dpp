@@ -1,6 +1,6 @@
 # Details about the install.yaml file are at https://ddev.readthedocs.io/en/latest/users/extend/additional-services/#sections-and-features-of-ddev-get-add-on-installyaml
 
-name: addon-template
+name: dpp
 
 # pre_install_actions - list of actions to run before installing the addon.
 # Examples would be removing an extraneous docker volume,
@@ -61,6 +61,8 @@ pre_install_actions:
 # by this add-on, or removal could remove things that are not owned by it
 project_files:
   - config.dpp.yml
+  - commands/host/install-playwright
+  - commands/host/playwright
 # - docker-compose.addon-template.yaml
 # - some-directory/file1.txt
 # - some-directory/file2.txt
@@ -75,7 +77,7 @@ global_files:
 
 # List of add-on names that this add-on depends on
 dependencies:
- - ddev/ddev-selenium-standalone-chrome
+# - ddev/ddev-selenium-standalone-chrome
 
 # DDEV environment variables can be interpolated into these actions
 post_install_actions:
