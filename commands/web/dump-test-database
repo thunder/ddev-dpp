@@ -1,0 +1,6 @@
+#!/bin/sh
+#ddev-generated
+
+cd "${DDEV_COMPOSER_ROOT}"/"${DDEV_DOCROOT}" || exit
+# shellcheck disable=SC2154
+php core/scripts/db-tools.php dump-database-d8-mysql > "${thunderDumpFile}"

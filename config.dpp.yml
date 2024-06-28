@@ -1,6 +1,7 @@
 #ddev-generated
 web_environment:
   - DRUSH_OPTIONS_URI=${DDEV_PRIMARY_URL}
+  - thunderDumpFile=${DDEV_COMPOSER_ROOT}/${DDEV_DOCROOT}/test-database-dump.php
 
 hooks:
   post-start:
