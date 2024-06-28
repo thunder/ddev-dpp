@@ -4,3 +4,5 @@
 mkdir -p "${DDEV_APPROOT}/tests/Playwright"
 cd "${DDEV_APPROOT}/tests/Playwright" || exit
 npm init playwright@latest
+
+node "${DDEV_APPROOT}"/.ddev/dpp/add-base-url.js ${DDEV_APPROOT}/tests/Playwright/playwright.config.js

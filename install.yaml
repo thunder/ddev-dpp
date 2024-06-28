@@ -63,6 +63,7 @@ project_files:
   - config.dpp.yml
   - commands/host/install-playwright
   - commands/host/playwright
+  - dpp/add-base-url.js
 # - docker-compose.addon-template.yaml
 # - some-directory/file1.txt
 # - some-directory/file2.txt
