@@ -1,4 +1,4 @@
-//ddev-generated
+//#ddev-generated
 const fs = require('fs');
 
 // Path to your Playwright config file
