@@ -1,3 +1,4 @@
+#ddev-generated
 web_environment:
   - DRUSH_OPTIONS_URI=${DDEV_PRIMARY_URL}
 
