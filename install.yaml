@@ -63,7 +63,6 @@ project_files:
   - config.dpp.yml
   - commands/host/install-playwright
   - commands/host/playwright
-  - commands/web/phpstan
   - commands/web/dump-test-database
   - dpp/add-base-url.js
 # - docker-compose.addon-template.yaml

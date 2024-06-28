@@ -1,6 +1,10 @@
 #!/bin/sh
 #ddev-generated
 
+## Description: Run Playwright commands
+## Usage: playwright
+## Example: "ddev playwright"
+
 cd "${DDEV_APPROOT}/tests/Playwright" || exit 1
 export PLAYWRIGHT_BASE_URL=$DDEV_PRIMARY_URL
 if [ -f yarn.lock ]; then

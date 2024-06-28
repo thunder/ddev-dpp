@@ -1,6 +1,10 @@
 #!/bin/sh
 #ddev-generated
 
+## Description: Install Playwright in the project
+## Usage: install-playwright
+## Example: "ddev install-playwright"
+
 mkdir -p "${DDEV_APPROOT}/tests/Playwright"
 cd "${DDEV_APPROOT}/tests/Playwright" || exit
 npm init playwright@latest
