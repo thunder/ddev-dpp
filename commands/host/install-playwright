@@ -1,0 +1,18 @@
+#!/bin/sh
+#ddev-generated
+
+## Description: Install Playwright in the project
+## Usage: install-playwright
+## Example: "ddev install-playwright"
+
+# Skip if Playwright is already installed
+if [ -d "${DDEV_APPROOT}/tests/Playwright" ]; then
+  echo "Playwright is already installed in the project."
+  exit 0
+fi
+
+mkdir -p "${DDEV_APPROOT}/tests/Playwright"
+cd "${DDEV_APPROOT}/tests/Playwright" || exit
+npm init playwright@latest
+
+node "${DDEV_APPROOT}"/.ddev/dpp/add-base-url.js ${DDEV_APPROOT}/tests/Playwright/playwright.config.js
