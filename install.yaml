@@ -64,8 +64,6 @@ project_files:
   - commands/host/install-playwright
   - commands/host/playwright
   - commands/web/dump-test-database
-  - commands/web/config-inspector
-  - commands/web/upgrade-status
   - dpp/add-base-url.js
 # - docker-compose.addon-template.yaml
 # - some-directory/file1.txt

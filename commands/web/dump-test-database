@@ -6,5 +6,12 @@
 ## Example: ddev dump-test-database
 
 cd "${DDEV_COMPOSER_ROOT}"/"${DDEV_DOCROOT}" || exit
+
+# Ask user for SITE_NAME, take "default" as default value
+read -rp "Enter the site name (default): " SITE_NAME
+export SITE_NAME=${SITE_NAME:-default}
+
+echo "Dumping the database for ${SITE_NAME}..."
+
 # shellcheck disable=SC2154
 php core/scripts/db-tools.php dump-database-d8-mysql > "${thunderDumpFile}"
