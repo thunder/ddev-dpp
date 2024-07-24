@@ -1,5 +1,10 @@
 #ddev-generated
 web_environment:
+  - MYSQL_DATABASE=db
+  - MYSQL_HOST=db
+  - MYSQL_PASSWORD=db
+  - MYSQL_USER=db
+  - DRUPAL_HASH_SALT=SomeRandomString
   - DRUSH_OPTIONS_URI=${DDEV_PRIMARY_URL}
   - thunderDumpFile=${DDEV_COMPOSER_ROOT}/${DDEV_DOCROOT}/test-database-dump.php
 
