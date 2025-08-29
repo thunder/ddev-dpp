@@ -5,7 +5,7 @@ This is a DDEV Add-on to provide a seamless integration with the [Drupal Project
 ## Installation
 
 ```bash
-ddev get thunder/ddev-dpp
+ddev add-on get thunder/ddev-dpp
 ```
 
 ## Usage
